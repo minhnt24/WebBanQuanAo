@@ -1,0 +1,16 @@
+.text{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.4px;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+}
+.form-outline{
+    margin: 5px 150px;
+    padding: 0px 150px;
+}
+.navbar-nav{
+   margin-left: 100px;
+}

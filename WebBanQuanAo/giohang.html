@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="giohang.css" />
+    <title>Assignment</title>
+    <style>
+      /* Nozte: Try to remove the following lines to see the effect of CSS positioning */
+      .affix {
+        top: 0;
+        width: 100%;
+        z-index: 9999 !important;
+      }
+
+      .affix + .container-fluid {
+        padding-top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-spy="affix" data-offset-top="197">
+      <!-- Navbar -->
+      <nav class="navbar navbar-inverse">
+        <div
+          class="navbar_loichao"
+          style="
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+          "
+        >
+          <marquee
+            width="100%"
+            style="
+              font-size: 14px;
+              line-height: 30px;
+              font-weight: 500;
+              color: #000000;
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-telephone-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+              />
+            </svg>
+            Hotline Mua Hàng: 0964 420 243 |
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-telephone-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+              />
+            </svg>
+            Hotline CSKH: 1900 101 999 - Ext 1 |
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-envelope-at"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"
+              />
+              <path
+                d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+              />
+            </svg>
+            Email CSKH: vietvuavanvat13579@gmail.com
+          </marquee>
+        </div>
+
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#myNavbar"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a
+              class="navbar-brand"
+              href="#trangchu"
+              style="
+                color: white;
+                font-weight: 300;
+                font-size: 25px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+              "
+              >BlackStore</a
+            >
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <form class="navbar-form navbar-left" action="/action_page.php">
+                <div
+                  class="input-group"
+                  style="width: 650px; padding-left: 30px"
+                >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search"
+                  />
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <li>
+                <a href="#"
+                  ><i
+                    class="glyphicon glyphicon-phone-alt"
+                    style="color: white; font-size: 18px"
+                  >
+                    0343.000.111</i
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#giohang" style="padding-top: 17px; padding-left: 50px"
+                  ><i
+                    class="bi bi-basket-fill"
+                    style="color: white; font-size: 18px"
+                  >
+                    <i style="font-size: 15px; padding-left: 5px">
+                      Giỏ hàng</i
+                    ></i
+                  ></a
+                >
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#dangnhap" style="color: white; padding-top: 17px"
+                  ><span class="glyphicon glyphicon-user"></span> Đăng nhập</a
+                >
+              </li>
+              <li>
+                <a href="#dangki" style="color: white; padding-top: 17px"
+                  >Đăng kí</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Navbar2 -->
+        <div
+          class="container-fluid"
+          style="
+            background-color: rgb(0, 0, 0);
+            font-weight: 700;
+            padding-left: 150px;
+          "
+        >
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#myNavbar"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav" style="padding-left: 100px">
+              <li><a href="#trangchu" style="color: white">TRANG CHỦ</a></li>
+              <li><a href="#new" style="color: white">NEW</a></li>
+              <li><a href="#ao" style="color: white">ÁO</a></li>
+              <li><a href="#quan" style="color: white">QUẦN</a></li>
+              <li><a href="#phukien" style="color: white">PHỤ KIỆN</a></li>
+              <li><a href="#giaydep" style="color: white">GIÀY DÉP</a></li>
+              <li><a href="#bosuutam" style="color: white">BỘ SƯU TẦM</a></li>
+              <li><a href="#gopy" style="color: white">GÓP Ý</a></li>
+              <li><a href="#gioithieu" style="color: white">GIỚI THIỆU</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--  -->
+    <!-- nav dọc -->
+    <div class="container">
+      <p style="padding-left: 0px; font-size: 14px">
+        <a href="trangchu.html" style="color: black">Trang chủ</a> | Giỏ hàng
+      </p>
+    </div>
+    <div class="wrapper container">
+      <div class="sidebar col-md-8" style="padding-left: 15px">
+        <div class="mt-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th style="padding-bottom: 15px">Đơn hàng của bạn</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sản phẩm</td>
+                <td>Đơn giá</td>
+                <td style="padding-left: 50px">Số lượng</td>
+                <td>Thành tiền</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td style="display: flex">
+                  <img
+                    style="width: 80px; height: 100px"
+                    src="https://savani.vn/images/products/2022/11/03/small/wbk006-3-c0075-2_1667445168.gif"
+                    alt=""
+                  />
+                  <p style="width: 70px; height: 50px; padding-left: 10px">
+                    Áo nỉ họa tiết Unlocked 3.DWTW009
+                  </p>
+                </td>
+                <td>329,000<ins>đ</ins></td>
+                <td>
+                  <div class="product-count">
+                    <form action="#" class="display-flex">
+                      <p class="qtyminus">-</p>
+                      <input
+                        type="text"
+                        name="quantity"
+                        value="1"
+                        class="qty"
+                      />
+                      <p class="qtyplus">+</p>
+                    </form>
+                  </div>
+                </td>
+                <td>329,000<ins>đ</ins></td>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-trash3-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"
+                    />
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td style="display: flex">
+                  <img
+                    style="width: 80px; height: 100px"
+                    src="https://savani.vn/images/products/2022/11/03/small/wbk006-3-c0075-2_1667445168.gif"
+                    alt=""
+                  />
+                  <p style="width: 70px; height: 50px; padding-left: 10px">
+                    Áo nỉ họa tiết Unlocked 3.DWTW009
+                  </p>
+                </td>
+                <td>329,000<ins>đ</ins></td>
+                <td>
+                  <div class="product-count">
+                    <form action="#" class="display-flex">
+                      <p class="qtyminus">-</p>
+                      <input
+                        type="text"
+                        name="quantity"
+                        value="1"
+                        class="qty"
+                      />
+                      <p class="qtyplus">+</p>
+                    </form>
+                  </div>
+                </td>
+                <td>329,000<ins>đ</ins></td>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-trash3-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"
+                    />
+                  </svg>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- <div class="social_media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          </div> -->
+      </div>
+
+      <!-- col 10 -->
+      <div class="col-md-4" style="background-color: rgb(255, 255, 255)">
+        <div class="container" style="padding-top: 30px">
+          <div
+            class="col-md-3"
+            style="
+              border: 1px solid rgb(236, 227, 227);
+              width: 250px;
+              height: 90px;
+              margin-left: 30px;
+              background-color: rgb(233, 228, 228);
+            "
+          >
+            <div style="float: left; padding-top: 20px">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="45"
+                fill="currentColor"
+                class="bi bi-car-front-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"
+                />
+              </svg>
+            </div>
+            <div
+              style="
+                padding-top: 20px;
+                padding-left: 15px;
+                font-weight: 600px;
+                float: left;
+              "
+            >
+              <p>Miễn phí giao hàng</p>
+              <p>Đơn hàng được free ship</p>
+            </div>
+          </div>
+        </div>
+        <div class="text">
+          <p>TỔNG ĐÀI HỖ TRỢ</p>
+          <ul>
+            <li>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telephone-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+                Hotline mua hàng: 0343000111</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telephone-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+                Hotline hỗ trợ, khiếu nại: 0343000111</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-alarm-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"
+                  />
+                </svg>
+                Thời gian làm việc từ 8h00 - 21h30 (từ thứ 2 - chủ nhật)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--  -->
+      </div>
+      <!--  -->
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start bg-light text-muted"
+      style="padding-top: 100px"
+    >
+      <hr />
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Company name
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>

@@ -1,0 +1,85 @@
+{
+  "SanPham": [
+    {
+      "id": "1",
+      "image": "https://bucket.nhanh.vn/store/2071/ps/20221223/tw019__1_.jpg",
+      "mota": "Áo Khoác Da Lộn Dày Đẹp",
+      "giagiam": "999,000",
+      "giaban": "450,000",
+      "phantramgiam": "Giảm 27%"
+    },
+    {
+      "id": "2",
+      "image": "https://bucket.nhanh.vn/store/2071/ps/20221223/tw019__1_.jpg",
+      "mota": "ÁO NỈ HỌA TIẾT UNLOCKED 3.DWTW009",
+      "giagiam": "329,000",
+      "giaban": "450,000",
+      "phantramgiam": "Giảm 27%"
+    },
+    {
+      "id": "3",
+      "image": "https://bucket.nhanh.vn/store/2071/ps/20221223/tw019__1_.jpg",
+      "mota": "ÁO NỈ HỌA TIẾT UNLOCKED 3.DWTW009",
+      "giagiam": "329,000",
+      "giaban": "450,000",
+      "phantramgiam": "Giảm 27%"
+    },
+    {
+      "id": "4",
+      "image": "https://bucket.nhanh.vn/store/2071/ps/20221223/tw019__1_.jpg",
+      "mota": "Áo Khoác Da Lộn Dày Đẹp",
+      "giagiam": "999,000",
+      "giaban": "1450,000",
+      "phantramgiam": "Giảm 27%"
+    }
+  ],
+  "Slide": [
+    {
+      "image1": "https://file.hstatic.net/1000253775/file/banner_ngang_sale_a490f569d86b4acdb5716721581cfe8c_master.jpg"
+    },
+    {
+      "image2": "https://file.hstatic.net/1000253775/file/banner_web_ngang_72efc8a132d840ad932685c6fd17f1bd_master.jpg"
+    },
+    {
+      "image3": "https://file.hstatic.net/1000253775/file/banner_ngang_9k_bce9439bb6f049a28848695d5270a900_master.jpg"
+    },
+    {
+      "image4": "https://file.hstatic.net/1000253775/file/banner_ngang_blx_d89c73fa69f745beb7e07ca4fe998224_master.jpg"
+    },
+    {
+      "image5": "https://savani.vn/images/banners/original/banner-gia-soc-03_1672370982.gif"
+    }
+  ],
+  "SanPham2": [
+    {
+      "image": "https://savani.vn/images/products/2022/11/29/resized/ao-da-lon-nam-mjd003-3-n0008-1_1669697487.jpg",
+      "mota": "ÁO NỈ HỌA TIẾT UNLOCKED 3.DWTW009",
+      "giagiam": "329,000",
+      "giaban": "450,000",
+      "phantramgiam": "Giảm 27%"
+    },
+    {
+      "image": "https://savani.vn/images/products/2022/12/09/resized/ao-phao-nam-map005-3-g0237-0_1670553619.jpg",
+      "mota": "ÁO NỈ HỌA TIẾT UNLOCKED 3.DWTW009",
+      "giagiam": "329,000",
+      "giaban": "450,000",
+      "phantramgiam": "Giảm 27%"
+    },
+    {
+      "image": "https://savani.vn/images/products/2022/11/30/resized/ao-ni-nu-anw100-1-1_1669790127.jpg",
+      "mota": "ÁO NỈ HỌA TIẾT UNLOCKED 3.DWTW009",
+      "giagiam": "329,000",
+      "giaban": "450,000",
+      "phantramgiam": "Giảm 27%"
+    }
+  ],
+  "chitet": [
+    {
+      "image1": "https://bucket.nhanh.vn/store/2071/ps/20221223/tw019__1_.jpg",
+      "image2": "https://product.hstatic.net/1000253775/product/z4032663187357_24fca0d86ab6fad4aa49e84339a1735a_0f74d23a646b47e4986b600cf1185fab_compact.jpg",
+      "image3": "https://product.hstatic.net/1000253775/product/z4032663158870_6ee8b205702ff796ace220f33954c292_55ffd5ee36cd43d1aacf9a01fc50b2c8_compact.jpg",
+      "image4": "https://product.hstatic.net/1000253775/product/z4032663227504_35e37308208d2f0beb65571ac50bba0a_b5467498069542ae83a9a74f86fe9dbe_compact.jpg",
+      "image5": "https://product.hstatic.net/1000253775/product/z4032663218799_f1ac18b759dac0c6e959870cc674b3d5_9daab995b8984688afd282a73c19cc0b_compact.jpg"
+    }
+  ]
+}
